@@ -47,7 +47,7 @@ Costos reales, margen protegido ✅
 📲 Escríbeme 👇
 ```
 
-- **Enlace en la bio:** el enlace de WhatsApp de arriba (o un Linktree / la página web si se crea).
+- **Enlace en la bio:** la página web (`index.html`, cuando esté publicada) o el enlace de WhatsApp de arriba.
 - **Botones de contacto:** activar "Llamar" y "WhatsApp" desde *Editar perfil → Opciones de contacto*.
 - **Tipo de cuenta:** Profesional → *Empresa* (permite estadísticas y botones).
 

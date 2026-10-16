@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ing. Jorge · Presupuestos y APU</title>
+  <meta name="description" content="Elaboración de Análisis de Precios Unitarios (APU), presupuestos de obra y carpetas de licitación para contratistas del sector civil e industrial.">
+  <meta property="og:title" content="Ing. Jorge · Presupuestos, APU y Licitaciones">
+  <meta property="og:description" content="Presupuestos ajustados a la realidad. Ofertas que ganan y dejan ganancia. Cotiza por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0B2545">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B2545'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' fill='%23F28C28' text-anchor='middle'%3EAPU%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #0B2545;
+      --navy-2: #13315C;
+      --orange: #F28C28;
+      --orange-dark: #D9741A;
+      --text: #1F2933;
+      --muted: #52606D;
+      --bg: #FFFFFF;
+      --bg-soft: #F4F6F9;
+      --border: #E1E6ED;
+      --wa: #25D366;
+      --radius: 14px;
+      --max: 1120px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Open Sans", system-ui, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, .brand { font-family: "Montserrat", system-ui, sans-serif; line-height: 1.2; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { max-width: var(--max); margin: 0 auto; padding: 0 20px; }
+    section { padding: 80px 0; }
+    .eyebrow {
+      display: inline-block; font-size: .8rem; font-weight: 600; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--orange-dark); margin-bottom: 12px;
+    }
+    h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); color: var(--navy); margin-bottom: 16px; }
+    .lead { color: var(--muted); max-width: 640px; font-size: 1.05rem; }
+
+    .btn {
+      display: inline-flex; align-items: center; gap: 10px; padding: 14px 26px;
+      border-radius: 999px; font-weight: 600; font-size: 1rem; transition: transform .15s, background .15s;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-wa { background: var(--wa); color: #fff; box-shadow: 0 8px 20px rgba(37, 211, 102, .3); }
+    .btn-wa:hover { background: #1EBE5A; }
+    .btn-ghost { border: 2px solid rgba(255,255,255,.4); color: #fff; }
+    .btn-ghost:hover { border-color: #fff; }
+    .btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 50; background: rgba(11, 37, 69, .97);
+      backdrop-filter: blur(6px); border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .brand { color: #fff; font-weight: 800; font-size: 1.15rem; display: flex; align-items: center; gap: 10px; }
+    .brand-mark {
+      width: 38px; height: 38px; border-radius: 10px; background: var(--orange); color: var(--navy);
+      display: grid; place-items: center; font-size: .8rem; font-weight: 800;
+    }
+    .brand small { display: block; font-family: "Open Sans", sans-serif; font-weight: 400; font-size: .75rem; color: #BFD0E6; }
+    .nav ul { display: flex; gap: 28px; list-style: none; }
+    .nav ul a { color: #D9E2EC; font-size: .95rem; }
+    .nav ul a:hover { color: var(--orange); }
+    .nav .btn { padding: 10px 18px; font-size: .9rem; }
+    @media (max-width: 860px) { .nav ul { display: none; } }
+    @media (max-width: 480px) { .nav .btn span { display: none; } .nav .btn { padding: 10px; } }
+
+    /* Hero */
+    .hero {
+      background:
+        linear-gradient(rgba(255,255,255,.04) 1px, transparent 1px) 0 0 / 40px 40px,
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px) 0 0 / 40px 40px,
+        linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+      color: #fff; padding: 96px 0 104px;
+    }
+    .hero-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 56px; align-items: center; }
+    .hero .eyebrow { color: var(--orange); }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.2rem); font-weight: 800; margin-bottom: 20px; }
+    .hero h1 em { font-style: normal; color: var(--orange); }
+    .hero p { color: #D9E2EC; font-size: 1.12rem; max-width: 560px; margin-bottom: 32px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+    .hero-card {
+      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius); padding: 28px;
+    }
+    .hero-card h3 { font-size: 1rem; color: var(--orange); margin-bottom: 16px; text-transform: uppercase; letter-spacing: .08em; }
+    .check { list-style: none; display: grid; gap: 14px; }
+    .check li { display: flex; gap: 12px; align-items: flex-start; color: #fff; }
+    .check li::before {
+      content: "✓"; flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
+      background: var(--orange); color: var(--navy); font-weight: 800; font-size: .8rem;
+      display: grid; place-items: center; margin-top: 1px;
+    }
+    @media (max-width: 860px) { .hero-grid { grid-template-columns: 1fr; } .hero { padding: 64px 0 72px; } }
+
+    /* Services */
+    .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; }
+    @media (max-width: 960px) { .grid-4 { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .grid-4 { grid-template-columns: 1fr; } }
+    .card {
+      background: #fff; border: 1px solid var(--border); border-radius: var(--radius); padding: 28px 24px;
+      transition: box-shadow .2s, transform .2s;
+    }
+    .card:hover { box-shadow: 0 14px 34px rgba(11, 37, 69, .1); transform: translateY(-4px); }
+    .icon {
+      width: 52px; height: 52px; border-radius: 12px; background: #FDF0E3; color: var(--orange-dark);
+      display: grid; place-items: center; margin-bottom: 18px;
+    }
+    .icon svg { width: 28px; height: 28px; }
+    .card h3 { color: var(--navy); font-size: 1.1rem; margin-bottom: 10px; }
+    .card p { color: var(--muted); font-size: .95rem; }
+
+    /* Benefits */
+    .soft { background: var(--bg-soft); }
+    .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+    @media (max-width: 860px) { .split { grid-template-columns: 1fr; gap: 32px; } }
+    .benefit { display: flex; gap: 16px; padding: 20px 0; border-bottom: 1px solid var(--border); }
+    .benefit:last-child { border-bottom: 0; }
+    .benefit-num {
+      font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 1.4rem; color: var(--orange);
+      min-width: 40px;
+    }
+    .benefit h3 { color: var(--navy); font-size: 1.05rem; margin-bottom: 4px; }
+    .benefit p { color: var(--muted); font-size: .95rem; }
+
+    /* Process */
+    .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; counter-reset: step; }
+    @media (max-width: 960px) { .steps { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
+    .step { position: relative; padding: 28px 24px; border-radius: var(--radius); background: var(--navy); color: #fff; }
+    .step::before {
+      counter-increment: step; content: counter(step, decimal-leading-zero);
+      font-family: "Montserrat", sans-serif; font-weight: 800; font-size: 2rem; color: var(--orange);
+      display: block; margin-bottom: 10px;
+    }
+    .step h3 { font-size: 1.05rem; margin-bottom: 6px; }
+    .step p { color: #BFD0E6; font-size: .93rem; }
+
+    /* Requirements */
+    .req { list-style: none; display: grid; gap: 12px; margin-top: 20px; }
+    .req li {
+      background: #fff; border: 1px solid var(--border); border-left: 4px solid var(--orange);
+      border-radius: 10px; padding: 14px 18px; color: var(--text);
+    }
+    .about-box {
+      background: var(--navy); color: #fff; border-radius: var(--radius); padding: 36px;
+    }
+    .about-box h3 { font-size: 1.4rem; margin-bottom: 4px; }
+    .about-box .role { color: var(--orange); font-weight: 600; margin-bottom: 16px; }
+    .about-box p { color: #D9E2EC; margin-bottom: 12px; }
+    .avatar {
+      width: 84px; height: 84px; border-radius: 50%; background: var(--orange); color: var(--navy);
+      display: grid; place-items: center; font-family: "Montserrat", sans-serif; font-weight: 800;
+      font-size: 1.6rem; margin-bottom: 20px; border: 4px solid rgba(255,255,255,.15); object-fit: cover;
+    }
+
+    /* CTA */
+    .cta { background: linear-gradient(135deg, var(--orange) 0%, var(--orange-dark) 100%); color: var(--navy); text-align: center; }
+    .cta h2 { color: var(--navy); }
+    .cta p { max-width: 620px; margin: 0 auto 28px; font-size: 1.08rem; }
+    .cta .phone { display: block; margin-top: 18px; font-weight: 600; }
+
+    /* Footer */
+    footer { background: #071A31; color: #9FB3C8; padding: 40px 0; font-size: .9rem; }
+    .foot { display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; align-items: center; }
+    .social { display: flex; gap: 12px; }
+    .social a {
+      width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,.08);
+      display: grid; place-items: center; transition: background .15s;
+    }
+    .social a:hover { background: var(--orange); color: var(--navy); }
+    .social svg { width: 20px; height: 20px; }
+
+    /* Floating WhatsApp */
+    .wa-float {
+      position: fixed; right: 20px; bottom: 20px; z-index: 60; width: 60px; height: 60px; border-radius: 50%;
+      background: var(--wa); color: #fff; display: grid; place-items: center;
+      box-shadow: 0 10px 24px rgba(0,0,0,.25); transition: transform .15s;
+    }
+    .wa-float:hover { transform: scale(1.08); }
+    .wa-float svg { width: 32px; height: 32px; }
+  </style>
+</head>
+<body>
+
+  <!-- Para cambiar el número o el mensaje de WhatsApp, edita los enlaces que empiezan con https://wa.me/ -->
+  <header>
+    <div class="wrap nav">
+      <a href="#inicio" class="brand">
+        <span class="brand-mark">APU</span>
+        <span>Ing. Jorge<small>Presupuestos y licitaciones</small></span>
+      </a>
+      <ul>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#beneficios">Beneficios</a></li>
+        <li><a href="#proceso">Cómo trabajo</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+      </ul>
+      <a class="btn btn-wa" href="https://wa.me/584146937820?text=Hola%20Ing.%20Jorge%2C%20requiero%20una%20cotizaci%C3%B3n%2Fasesor%C3%ADa%20para%20la%20elaboraci%C3%B3n%20de%20un%20presupuesto%20y%20APU%20de%20proyecto" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.56.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.67 12.06c0 2 .52 3.96 1.52 5.68L.57 23.3l5.7-1.5a11.3 11.3 0 0 0 5.78 1.47h.01c6.26 0 11.36-5.1 11.37-11.36 0-3.04-1.18-5.89-3.33-8.04"/></svg>
+        <span>Cotizar</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">Ingeniería de costos · Civil e industrial</span>
+          <h1>Presupuestos ajustados a la realidad. <em>Ofertas que ganan</em> y dejan ganancia.</h1>
+          <p>¿Vas a presentar una oferta técnica/económica y necesitas precisión en tus costos? Elaboro Análisis de Precios Unitarios (APU), presupuestos y carpetas de licitación para contratistas y empresas.</p>
+          <div class="hero-actions">
+            <a class="btn btn-wa" href="https://wa.me/584146937820?text=Hola%20Ing.%20Jorge%2C%20requiero%20una%20cotizaci%C3%B3n%2Fasesor%C3%ADa%20para%20la%20elaboraci%C3%B3n%20de%20un%20presupuesto%20y%20APU%20de%20proyecto" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.56.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.67 12.06c0 2 .52 3.96 1.52 5.68L.57 23.3l5.7-1.5a11.3 11.3 0 0 0 5.78 1.47h.01c6.26 0 11.36-5.1 11.37-11.36 0-3.04-1.18-5.89-3.33-8.04"/></svg>
+              Solicitar cotización
+            </a>
+            <a class="btn btn-ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Lo que obtienes</h3>
+          <ul class="check">
+            <li>Presupuestos ajustados a la realidad del mercado.</li>
+            <li>Análisis de rendimientos y costos de equipos.</li>
+            <li>Resguardo del margen de rentabilidad de tu empresa.</li>
+            <li>Carpetas de licitación completas y a tiempo.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="wrap">
+        <span class="eyebrow">Servicios</span>
+        <h2>Todo lo que necesitas para presentar tu oferta</h2>
+        <p class="lead">Trabajo con contratistas y empresas del sector civil e industrial que necesitan costos precisos y documentación lista para consignar.</p>
+        <div class="grid-4">
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2M12 10h2M16 10h0M8 14h2M12 14h2M8 18h2M12 18h4M16 14v0"/></svg></div>
+            <h3>Análisis de Precios Unitarios</h3>
+            <p>APU por partida con materiales, equipos, mano de obra, rendimientos y costos indirectos.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V9l7-5 7 5v12M9 21v-6h6v6"/></svg></div>
+            <h3>Presupuestos de obra</h3>
+            <p>Cómputos métricos, partidas y resumen general con precios actualizados.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6l2 2h8v14H4z"/><path d="M9 13l2 2 4-4"/></svg></div>
+            <h3>Carpetas de licitación</h3>
+            <p>Oferta técnica y económica organizada según el pliego, lista para consignar.</p>
+          </article>
+          <article class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
+            <h3>Asesoría en costos</h3>
+            <p>Revisión de presupuestos existentes para detectar pérdidas y proteger tu margen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft" id="beneficios">
+      <div class="wrap split">
+        <div>
+          <span class="eyebrow">¿Por qué trabajar conmigo?</span>
+          <h2>Un error en el presupuesto puede costarte la obra… o la ganancia</h2>
+          <p class="lead">Una oferta muy alta pierde la licitación. Una muy baja te hace trabajar sin ganar. Mi trabajo es encontrar el precio correcto, sustentado partida por partida.</p>
+        </div>
+        <div>
+          <div class="benefit">
+            <span class="benefit-num">01</span>
+            <div><h3>Precisión</h3><p>Costos basados en precios reales del mercado, no en ofertas viejas.</p></div>
+          </div>
+          <div class="benefit">
+            <span class="benefit-num">02</span>
+            <div><h3>Rendimientos sustentados</h3><p>Cálculo de rendimientos de equipos y cuadrillas según el tipo de obra.</p></div>
+          </div>
+          <div class="benefit">
+            <span class="benefit-num">03</span>
+            <div><h3>Margen protegido</h3><p>Indirectos, imprevistos y utilidad calculados para que la obra sea rentable.</p></div>
+          </div>
+          <div class="benefit">
+            <span class="benefit-num">04</span>
+            <div><h3>Entrega a tiempo</h3><p>Trabajo organizado según la fecha límite de tu licitación.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="proceso">
+      <div class="wrap">
+        <span class="eyebrow">Cómo trabajo</span>
+        <h2>De la información a tu oferta lista, en 4 pasos</h2>
+        <div class="steps">
+          <div class="step"><h3>Me escribes</h3><p>Cuéntame por WhatsApp qué proyecto vas a ofertar y la fecha de entrega.</p></div>
+          <div class="step"><h3>Reviso el alcance</h3><p>Analizo planos, cómputos y pliego, y te envío la cotización del servicio.</p></div>
+          <div class="step"><h3>Elaboro</h3><p>Preparo los APU, el presupuesto y la carpeta de licitación.</p></div>
+          <div class="step"><h3>Entrego y ajusto</h3><p>Revisamos juntos y hago los ajustes finales antes de consignar.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="soft" id="sobre-mi">
+      <div class="wrap split">
+        <div class="about-box">
+          <!-- Para usar una foto: reemplaza este div por <img class="avatar" src="foto.jpg" alt="Ing. Jorge"> -->
+          <div class="avatar">IJ</div>
+          <h3>Ing. Jorge</h3>
+          <div class="role">Ingeniero de costos y presupuestos</div>
+          <p>Brindo asesoría y elaboración de Análisis de Precios Unitarios, presupuestos y carpetas de licitación para contratistas y empresas del sector civil e industrial.</p>
+          <p>Mi objetivo es que cada oferta que presentes sea competitiva y, al mismo tiempo, rentable para tu empresa.</p>
+        </div>
+        <div>
+          <span class="eyebrow">Para cotizar tu proyecto</span>
+          <h2>Ten a mano esta información</h2>
+          <ul class="req">
+            <li>Tipo de proyecto u obra y su ubicación.</li>
+            <li>Planos o descripción del alcance.</li>
+            <li>Cómputos métricos, si ya los tienes.</li>
+            <li>Pliego o bases de la licitación.</li>
+            <li>Fecha límite de entrega de la oferta.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="wrap">
+        <h2>¿Tienes una licitación en puerta?</h2>
+        <p>Coordina una consulta o cotización directamente por WhatsApp. Cuéntame tu proyecto y te respondo a la brevedad.</p>
+        <a class="btn btn-wa" href="https://wa.me/584146937820?text=Hola%20Ing.%20Jorge%2C%20requiero%20una%20cotizaci%C3%B3n%2Fasesor%C3%ADa%20para%20la%20elaboraci%C3%B3n%20de%20un%20presupuesto%20y%20APU%20de%20proyecto" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.56.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.67 12.06c0 2 .52 3.96 1.52 5.68L.57 23.3l5.7-1.5a11.3 11.3 0 0 0 5.78 1.47h.01c6.26 0 11.36-5.1 11.37-11.36 0-3.04-1.18-5.89-3.33-8.04"/></svg>
+          Escribir por WhatsApp
+        </a>
+        <span class="phone">+58 414 693 7820</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>© <span id="year">2026</span> Ing. Jorge · Presupuestos, APU y Licitaciones</div>
+      <div class="social">
+        <!-- Reemplaza el "#" por el enlace real del perfil cuando esté creado -->
+        <a href="#" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 8h3V4h-3c-2.76 0-4 1.79-4 4.5V11H7v4h3v9h4v-9h3l1-4h-4V8.5c0-.3.2-.5.5-.5z"/></svg></a>
+        <a href="https://wa.me/584146937820" aria-label="WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.56.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.67 12.06c0 2 .52 3.96 1.52 5.68L.57 23.3l5.7-1.5a11.3 11.3 0 0 0 5.78 1.47h.01c6.26 0 11.36-5.1 11.37-11.36 0-3.04-1.18-5.89-3.33-8.04"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/584146937820?text=Hola%20Ing.%20Jorge%2C%20requiero%20una%20cotizaci%C3%B3n%2Fasesor%C3%ADa%20para%20la%20elaboraci%C3%B3n%20de%20un%20presupuesto%20y%20APU%20de%20proyecto" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.79-1.47-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.21 3.07c.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.5h-.01a9.4 9.4 0 0 1-4.8-1.32l-.34-.2-3.56.94.95-3.48-.22-.36a9.4 9.4 0 0 1-1.44-5.02c0-5.2 4.24-9.43 9.44-9.43 2.52 0 4.89.98 6.67 2.77a9.37 9.37 0 0 1 2.76 6.67c0 5.2-4.24 9.43-9.45 9.43m8.04-17.47A11.3 11.3 0 0 0 12.05.7C5.78.7.68 5.8.67 12.06c0 2 .52 3.96 1.52 5.68L.57 23.3l5.7-1.5a11.3 11.3 0 0 0 5.78 1.47h.01c6.26 0 11.36-5.1 11.37-11.36 0-3.04-1.18-5.89-3.33-8.04"/></svg>
+  </a>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
