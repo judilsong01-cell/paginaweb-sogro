@@ -1,0 +1,10 @@
+{
+  // Página estática servida por Cloudflare Workers (Static Assets).
+  // El nombre debe coincidir con el del Worker en el panel de Cloudflare.
+  "name": "paginaweb-sogro",
+  "compatibility_date": "2026-10-16",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "404-page"
+  }
+}
