@@ -1,6 +1,6 @@
-# Página web — Ing. Jorge (Presupuestos, APU e Licitações)
+# Navemar — Página web + pacote WhatsApp e e-mail
 
-Página de apresentação dos serviços, em espanhol, com formulário de contato.
+Página de apresentação dos serviços da Navemar (Ing. Jorge), em espanhol. O contato é só por **WhatsApp** e **e-mail**.
 Não precisa de servidor nem de programação: são arquivos estáticos.
 
 ## Estrutura
@@ -11,11 +11,11 @@ public/                        → tudo o que vai para a internet
   404.html                     → página de "não encontrada"
   _headers                     → cabeçalhos de segurança/cache (Cloudflare)
   assets/css/styles.css        → cores, fontes e layout
-  assets/js/config.js          → ⭐ DADOS (contato, redes, foto, logo) — editar só aqui
+  assets/js/config.js          → ⭐ DADOS (WhatsApp, e-mail, foto, logo) — editar só aqui
   assets/js/main.js            → aplica os dados na página (não precisa mexer)
   assets/img/                  → fotos e logo
 wrangler.jsonc                 → configuração do Cloudflare
-redes-sociales.md              → textos para Instagram, Facebook e WhatsApp Business
+paquete/                       → pacote WhatsApp Business + e-mail + imagens (ver paquete/LEEME.md)
 ```
 
 ## Como colocar os dados quando estiverem prontos
@@ -25,10 +25,10 @@ Abra `public/assets/js/config.js` e preencha entre as aspas. O que ficar vazio (
 | Campo | O que aparece na página |
 |---|---|
 | `apellido` | Nome completo no topo, no "Sobre mí" e no rodapé |
+| `empresa` | Nome da empresa (Navemar) no topo, título e rodapé |
 | `email` | Ativa o formulário de contato (as mensagens chegam nesse e-mail) e mostra o e-mail |
 | `whatsapp` | Botão verde flutuante e cartão de WhatsApp (só números, com código do país, ex.: `584141234567`) |
 | `telefono` | Telefone visível, para ligar |
-| `instagram`, `facebook`, `linkedin` | Cartões na seção de contato e ícones no rodapé |
 | `ciudad` | "Atención en … y a distancia" |
 | `foto`, `logo` | Foto no "Sobre mí" e logo no topo (subir os arquivos em `public/assets/img/`) |
 

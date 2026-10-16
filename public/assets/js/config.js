@@ -30,9 +30,4 @@ window.SITE = {
   mensajeWhatsapp: "Hola Ing. Jorge, vi la página de Navemar y quisiera una cotización/asesoría para mi proyecto",
 
   telefono: "+58 412 101 1442",    // Como se muestra en la página
-
-  // --- Redes sociales (enlace completo del perfil) -----------
-  instagram: "",                   // Ej: "https://instagram.com/ing.jorge.apu"
-  facebook: "",                    // Ej: "https://facebook.com/ing.jorge.apu"
-  linkedin: "",                    // Ej: "https://linkedin.com/in/..."
 };
