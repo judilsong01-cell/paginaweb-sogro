@@ -1,0 +1,8 @@
+Coloca aquí las imágenes de la página:
+
+- foto.jpg  → foto del Ing. Jorge (cuadrada, mínimo 400x400 px)
+- logo.png  → logo (fondo transparente, unos 200 px de alto)
+
+Después escribe la ruta en assets/js/config.js, por ejemplo:
+  foto: "assets/img/foto.jpg",
+  logo: "assets/img/logo.png",
