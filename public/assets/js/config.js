@@ -8,6 +8,7 @@
  */
 window.SITE = {
   // --- Identidad ---------------------------------------------
+  empresa: "Navemar",              // Nombre de la empresa
   nombre: "Ing. Jorge",            // Cómo aparece en la página
   apellido: "",                    // Ej: "Pérez" → "Ing. Jorge Pérez"
   cargo: "Ingeniero de costos y presupuestos",
@@ -21,14 +22,14 @@ window.SITE = {
   // Correo que recibe los mensajes del formulario de contacto.
   // La primera vez que alguien envíe el formulario, llegará a este
   // correo un mensaje de FormSubmit para activarlo (un solo clic).
-  email: "",                       // Ej: "contacto@ejemplo.com"
+  email: "j08238920@gmail.com",
 
   // Número de WhatsApp con código de país, solo dígitos, sin + ni espacios.
   // Ej. Venezuela: "584141234567"
-  whatsapp: "",
-  mensajeWhatsapp: "Hola Ing. Jorge, requiero una cotización/asesoría para la elaboración de un presupuesto y APU de proyecto",
+  whatsapp: "584121011442",
+  mensajeWhatsapp: "Hola Ing. Jorge, vi la página de Navemar y quisiera una cotización/asesoría para mi proyecto",
 
-  telefono: "",                    // Para mostrar, ej: "+58 414 123 4567"
+  telefono: "+58 412 101 1442",    // Como se muestra en la página
 
   // --- Redes sociales (enlace completo del perfil) -----------
   instagram: "",                   // Ej: "https://instagram.com/ing.jorge.apu"

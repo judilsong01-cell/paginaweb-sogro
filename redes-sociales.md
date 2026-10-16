@@ -1,9 +1,9 @@
 # Kit de perfiles para Instagram, Facebook y WhatsApp Business
 
-**Ing. Jorge [Apellido]**: Análisis de Precios Unitarios (APU), presupuestos y carpetas de licitación
+**Navemar · Ing. Jorge [Apellido]**: estimación y control de costos, APU, ofertas económicas para licitaciones, asesoría en costos y material para cursos
 
 > Reemplaza `[Apellido]` y cualquier dato entre corchetes antes de publicar.
-> WhatsApp de contacto: **+58 414 693 7820**
+> WhatsApp de contacto: **+58 412 101 1442** · Correo: **j08238920@gmail.com**
 
 ---
 
@@ -22,7 +22,7 @@
 **Enlace directo de WhatsApp** (para la bio, botones y publicaciones):
 
 ```
-https://wa.me/584146937820?text=Hola%20Ing.%20Jorge%2C%20requiero%20una%20cotizaci%C3%B3n%2Fasesor%C3%ADa%20para%20la%20elaboraci%C3%B3n%20de%20un%20presupuesto%20y%20APU%20de%20proyecto
+https://wa.me/584121011442?text=Hola%20Ing.%20Jorge%2C%20requiero%20una%20cotizaci%C3%B3n%2Fasesor%C3%ADa%20para%20la%20elaboraci%C3%B3n%20de%20un%20presupuesto%20y%20APU%20de%20proyecto
 ```
 
 ---
@@ -55,7 +55,7 @@ Costos reales, margen protegido ✅
 
 | Destacada | Contenido |
 |---|---|
-| **Servicios** | Una historia por servicio (APU, presupuesto, licitación, asesoría) |
+| **Servicios** | Una historia por servicio (costos, APU, ofertas, asesoría, cursos) |
 | **Proyectos** | Tipos de obra presupuestada (sin datos confidenciales del cliente) |
 | **Clientes** | Testimonios y capturas de mensajes de agradecimiento (con permiso) |
 | **Tips** | Consejos cortos de costos |
@@ -67,7 +67,7 @@ Costos reales, margen protegido ✅
 
 - **Nombre de la página:** Ing. Jorge [Apellido] - Presupuestos, APU y Licitaciones
 - **Categoría:** Servicio de ingeniería · Consultor de negocios
-- **Botón de acción:** "Enviar mensaje de WhatsApp" (conectar el número +58 414 693 7820)
+- **Botón de acción:** "Enviar mensaje de WhatsApp" (conectar el número +58 412 101 1442)
 - **Portada (1640 × 624 px):** foto de obra o planos con el texto
   *"Presupuestos y APU para licitaciones · Civil e industrial"* y el número de WhatsApp.
 
@@ -89,7 +89,7 @@ del sector civil e industrial.
 ✅ Resguardo del margen de rentabilidad de tu empresa.
 ✅ Carpetas de licitación completas y entregadas a tiempo.
 
-📲 Coordina una consulta o cotización por WhatsApp: +58 414 693 7820
+📲 Coordina una consulta o cotización por WhatsApp: +58 412 101 1442
 ```
 
 ### Grupos donde compartir publicaciones
@@ -101,7 +101,7 @@ Busca en Facebook: "contratistas Venezuela", "ingenieros civiles Venezuela",
 
 ## 4. WhatsApp Business
 
-Descargar **WhatsApp Business** (gratis) y usar el número +58 414 693 7820.
+Descargar **WhatsApp Business** (gratis) y usar el número +58 412 101 1442.
 
 | Campo | Texto |
 |---|---|
@@ -131,15 +131,16 @@ Horario: Lun-Vie 8 a.m. - 6 p.m.
 ### Respuestas rápidas
 | Atajo | Mensaje |
 |---|---|
-| `/servicios` | Ofrezco: 1) Análisis de Precios Unitarios (APU) 2) Presupuestos de obra 3) Carpetas de licitación (oferta técnica y económica) 4) Asesoría en costos y rendimientos. ¿Cuál necesitas? |
+| `/servicios` | En Navemar ofrezco: 1) Estimación y control de costos 2) Análisis de Precios Unitarios (APU) 3) Ofertas económicas para licitaciones 4) Asesoría en análisis de costos 5) Material para dictar cursos. ¿Cuál necesitas? |
 | `/requisitos` | Para cotizar necesito: planos o descripción del alcance, cómputos métricos (si los hay), pliego o bases de la licitación y fecha límite de entrega. |
 | `/gracias` | ¡Gracias por tu confianza! Quedo atento a cualquier consulta. Éxito con tu oferta. 💪 |
 
 ### Catálogo (un producto por servicio)
-1. **Análisis de Precios Unitarios (APU)**: materiales, equipos, mano de obra y rendimientos por partida.
-2. **Presupuesto de obra**: cómputos, partidas y resumen general ajustado al mercado.
-3. **Carpeta de licitación**: oferta técnica y económica lista para consignar.
-4. **Asesoría en costos**: revisión de presupuestos existentes y protección del margen.
+1. **Estimación y control de costos**: estimación del costo del proyecto y seguimiento durante la ejecución.
+2. **Análisis de Precios Unitarios (APU)**: materiales, equipos, mano de obra y rendimientos por partida.
+3. **Oferta económica para licitaciones**: preparada según el pliego, lista para consignar.
+4. **Asesoría en análisis de costos**: revisión de presupuestos existentes y protección del margen.
+5. **Material para cursos**: preparación de material didáctico para dictar cursos de costos y APU.
 
 *(Precio: "Consultar", porque cada proyecto se cotiza aparte)*
 
@@ -172,7 +173,7 @@ y carpetas de licitación para contratistas y empresas del sector civil e indust
 ✅ Resguardo del margen de rentabilidad de tu empresa.
 
 📲 Coordina una consulta o cotización por WhatsApp: enlace en la bio
-o escribe al +58 414 693 7820.
+o escribe al +58 412 101 1442.
 
 #APU #PresupuestosDeObra #Licitaciones #IngenieriaCivil #Contratistas
 ```
@@ -200,7 +201,7 @@ o escribe al +58 414 693 7820.
 1. Desde el Facebook personal: *Menú → Páginas → Crear página nueva*.
 2. Nombre, categoría y biografía (sección 3).
 3. Subir foto de perfil y portada.
-4. *Agregar botón → Enviar mensaje de WhatsApp* → número +58 414 693 7820.
+4. *Agregar botón → Enviar mensaje de WhatsApp* → número +58 412 101 1442.
 5. *Configuración → Cuentas vinculadas → Instagram* para publicar en ambas a la vez.
 
 **WhatsApp Business**

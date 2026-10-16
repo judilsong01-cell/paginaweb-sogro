@@ -26,7 +26,7 @@
     var value = key === "nombreCompleto" ? fullName : S[key];
     if (value) el.textContent = value;
   });
-  document.title = fullName + " · Presupuestos y APU";
+  document.title = (S.empresa || fullName) + " · Costos, APU y Licitaciones";
   var year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
@@ -64,13 +64,17 @@
 
   // Canales de contacto
   var channels = [
-    { key: "whatsapp", title: "WhatsApp", text: S.telefono || "Escríbeme directamente", href: waLink },
+    { key: "whatsapp", title: "WhatsApp / Teléfono", text: S.telefono || "Escríbeme directamente", href: waLink },
     { key: "email", title: "Correo", text: S.email, href: "mailto:" + S.email },
     { key: "telefono", title: "Teléfono", text: S.telefono, href: "tel:" + (S.telefono || "").replace(/[^\d+]/g, "") },
     { key: "instagram", title: "Instagram", text: "Ver perfil", href: S.instagram },
     { key: "facebook", title: "Facebook", text: "Ver página", href: S.facebook },
     { key: "linkedin", title: "LinkedIn", text: "Ver perfil", href: S.linkedin }
-  ].filter(function (c) { return has(c.key); });
+  ].filter(function (c) {
+    // Si el teléfono es el mismo número de WhatsApp, se muestra una sola tarjeta
+    if (c.key === "telefono" && has("whatsapp") && S.telefono.replace(/\D/g, "") === S.whatsapp.replace(/\D/g, "")) return false;
+    return has(c.key);
+  });
 
   var list = document.getElementById("channels");
   if (list) {
